@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe4ef">
+  <title>A Little Surprise for Shamma 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+  <main class="app">
+    <section class="screen active" id="welcome">
+      <div class="tiny-label">A tiny corner of the internet, made just for you</div>
+      <div class="envelope-wrap">
+        <div class="envelope" aria-hidden="true"><span>💌</span></div>
+      </div>
+      <p class="eyebrow">Pssst… Shamma Fathima!</p>
+      <h1>Someone has a little<br><span>surprise for you</span> 💗</h1>
+      <p class="intro">It’s a little late… but you’re never an afterthought.</p>
+      <button class="primary" data-next="message1">Open your surprise ✨</button>
+      <p class="small-note">Best viewed with your heart (and maybe a tissue 😭)</p>
+    </section>
+
+    <section class="screen" id="message1">
+      <div class="step">01 / A LITTLE CONFESSION</div>
+      <div class="sticker">🙈</div>
+      <h2>First of all…<br><span>I owe you an apology.</span></h2>
+      <p class="letter">I actually forgot your birthday. 😭 How did my brain manage to forget such an important day? Please file a complaint with my memory department. It is currently under investigation. 🫠</p>
+      <p class="letter">But late wishes don’t mean less love. You deserve to be celebrated every day—not just on one date. 💗</p>
+      <button class="primary" data-next="message2">Okay, continue… 🥹</button>
+    </section>
+
+    <section class="screen" id="message2">
+      <div class="step">02 / BESTIE APPRECIATION</div>
+      <div class="sticker">🫶🏻</div>
+      <h2>Dear Shamma,</h2>
+      <p class="letter">Thank you for being my best friend, for the laughs, the random conversations, the silly moments, and all the memories that make ordinary days feel special.</p>
+      <p class="letter">You’re one of those people who make life a little softer and a lot more fun. I might forget a date sometimes, but I hope you never forget how special you are to me. ❤️</p>
+      <button class="primary" data-next="gallery">Let’s open our memories 📸</button>
+    </section>
+
+    <section class="screen" id="gallery">
+      <div class="step">03 / OUR LITTLE MEMORY LANE</div>
+      <h2>Some memories, <span>just us</span> 📷</h2>
+      <p class="subtext">Add your favourite photos in the <code>photos</code> folder and update the filenames in <code>script.js</code>.</p>
+      <div class="photo-grid">
+        <figure class="photo-card tilt-left">
+          <img src="photos/photo1.jpg" alt="Memory photo 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>📸</span><b>Our favourite moment</b><small>Add photo1.jpg</small></div>
+          <figcaption>One for the memory book 💕</figcaption>
+        </figure>
+        <figure class="photo-card tilt-right">
+          <img src="photos/photo2.jpg" alt="Memory photo 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>🥹</span><b>That silly day</b><small>Add photo2.jpg</small></div>
+          <figcaption>Still makes me smile ✨</figcaption>
+        </figure>
+        <figure class="photo-card tilt-left">
+          <img src="photos/photo3.jpg" alt="Memory photo 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>🫶🏻</span><b>Bestie energy</b><small>Add photo3.jpg</small></div>
+          <figcaption>My kind of chaos 😂</figcaption>
+        </figure>
+        <figure class="photo-card tilt-right">
+          <img src="photos/photo4.jpg" alt="Memory photo 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>🌷</span><b>A precious memory</b><small>Add photo4.jpg</small></div>
+          <figcaption>More memories to come 💗</figcaption>
+        </figure>
+      </div>
+      <button class="primary" data-next="birthday">One last thing… 🎂</button>
+    </section>
+
+    <section class="screen" id="birthday">
+      <div class="step">04 / YOUR SPECIAL WISH</div>
+      <div class="cake" aria-label="Birthday cake">🎂</div>
+      <h2>Belated happy birthday,<br><span>Shamma Fathima!</span> 🎉</h2>
+      <p class="letter">May this year bring you peace, genuine happiness, exciting opportunities, good health, and all the little things your heart has been wishing for.</p>
+      <p class="letter">May you keep laughing loudly, dreaming bravely, and being your wonderful self. And may your bestie remember your birthday on time next year. (No promises, but I’ll set 17 reminders. 😂)</p>
+      <button class="primary" id="celebrate">Tap for a little birthday magic 🎊</button>
+      <div class="magic-message" id="magicMessage" hidden>
+        <div class="big-heart">💗</div>
+        <h3>You are loved. Always.</h3>
+        <p>Sorry I’m late, Shamma. Happy birthday, my bestie! 🫂💕</p>
+        <button class="secondary" id="restart">Replay our little surprise ↻</button>
+      </div>
+      <p class="signature">Made with love, a little guilt, and lots of bestie feelings 💌</p>
+    </section>
+  </main>
+  <footer>For Shamma Fathima, with love 🌷</footer>
+  <script src="script.js"></script>
+</body>
+</html>
